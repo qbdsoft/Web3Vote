@@ -1,4 +1,19 @@
-# Web3Vote
-通过智能合约实现去中心化投票
+# web3-vote
 
-![example](https://github.com/theRunCom/Web3Vote/blob/main/example.png)
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
