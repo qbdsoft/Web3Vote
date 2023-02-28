@@ -51,6 +51,7 @@ contract Vote {
             require(to == msg.sender, unicode"不能循环授权！");
         }
  
+ 
         sender.isVoted = true;
         sender.delegator = to;
         Voter storage delegator_ = voters[to];
@@ -70,6 +71,6 @@ contract Vote {
         board[targetId].totalAmount += sender.amount;
         emit voteSuccess(unicode'投票成功');
     }
-    
+  
     event voteSuccess(string);
 }
