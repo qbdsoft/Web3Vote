@@ -3,18 +3,13 @@ import useWeb3 from "../hooks/useWeb3";
 import { ref, onMounted } from "vue";
 const { web3, voteContract, getAccount } = useWeb3();
 
-// 定义主持人信息
-const host = ref("");
 
-// 获取主持人信息
+const host = ref("");
 const getHost = async () => {
   host.value = await voteContract.methods.host().call();
 };
 
-// 选民地址
 const voterAddress = ref("");
-
-// 分发票权
 const mandate = async () => {
   const arr = eval(voterAddress.value);
   const account = await getAccount();
