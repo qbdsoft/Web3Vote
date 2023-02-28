@@ -4,11 +4,7 @@ import useWeb3 from "@/hooks/useWeb3";
 const { web3, voteContract, getAccount } = useWeb3();
 
 const account = ref("");
-
-// 选民信息
 const voterInfo = ref({});
-
-// 受托人地址
 const delegatorAddress = ref("");
 
 const getVoteInfo = async () => {
