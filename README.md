@@ -1,5 +1,6 @@
 # web3-vote
 
+![img](https://github.com/theRunCom/Web3Vote/blob/main/example.png)
 ## Project setup
 ```
 npm install
