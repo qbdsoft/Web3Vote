@@ -51,7 +51,6 @@ contract Vote {
             require(to == msg.sender, unicode"不能循环授权！");
         }
  
- 
         sender.isVoted = true;
         sender.delegator = to;
         Voter storage delegator_ = voters[to];
