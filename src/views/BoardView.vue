@@ -3,9 +3,7 @@ import useWeb3 from "../hooks/useWeb3";
 import { ref, onMounted } from "vue";
 const { web3, voteContract, getAccount } = useWeb3();
 
-// 看板信息
 const board = ref([]);
-
 const account = ref("");
 
 const getBoardInfo = async () => {
